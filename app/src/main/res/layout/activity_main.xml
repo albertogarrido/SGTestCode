@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/producerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        tools:text="Producers: 12" />
+
+    <TextView
+        android:id="@+id/consumerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/producerCount"
+        android:layout_toStartOf="@+id/listItemsCount"
+        android:padding="8dp"
+        tools:text="Consumers: 12" />
+
+    <TextView
+        android:id="@+id/listItemsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        tools:text="list items: 12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/addProducer"
+        android:layout_below="@+id/consumerCount"
+        tools:listitem="@layout/list_item" />
+
+    <Button
+        android:id="@+id/addProducer"
+        style="@style/AppTheme.ButtonProducer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/centerBottom"
+        android:text="@string/add_producer" />
+
+    <View
+        android:id="@+id/centerBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/addConsumer"
+        style="@style/AppTheme.ButtonConsumer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/centerBottom"
+        android:text="@string/add_consumer" />
+
+</RelativeLayout>

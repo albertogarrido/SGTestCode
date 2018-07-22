@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StudydriveTest</string>
+    <string name="add_consumer">Add Consumer</string>
+    <string name="add_producer">Add producer</string>
+    <plurals name="consumers">
+        <item quantity="one">Consumer: %d</item>
+        <item quantity="other">Consumers: %d</item>
+    </plurals>
+    <plurals name="producers">
+        <item quantity="one">Producer: %d</item>
+        <item quantity="other">Producers: %d</item>
+    </plurals>
+    <plurals name="listItems">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+</resources>
