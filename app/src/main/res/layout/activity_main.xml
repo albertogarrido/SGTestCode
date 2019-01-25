@@ -36,12 +36,12 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_above="@id/addProducer"
+        android:layout_above="@id/addProducerButton"
         android:layout_below="@+id/consumerCount"
         tools:listitem="@layout/list_item" />
 
     <Button
-        android:id="@+id/addProducer"
+        android:id="@+id/addProducerButton"
         style="@style/AppTheme.ButtonProducer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         android:visibility="invisible" />
 
     <Button
-        android:id="@+id/addConsumer"
+        android:id="@+id/addConsumerButton"
         style="@style/AppTheme.ButtonConsumer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
